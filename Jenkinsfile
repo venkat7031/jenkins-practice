@@ -2,6 +2,10 @@ pipeline {
     agent {
         label 'AGENT1'
     }
+    options {
+        timeout(time: 30, unit: 'MINUTES') 
+        disableConcurrentBuilds()
+    }
 
     stages {
         stage('Build') {
