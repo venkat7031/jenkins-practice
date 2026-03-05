@@ -25,11 +25,12 @@ pipeline {
 post { 
         always { 
             echo 'I will always say Hello again!'
+            deleteDir{}
         }
         success { 
-            echo 'Hello success!'
+            echo 'Hello success'
         }
         failure { 
-            echo 'Hello failure!'
+            echo 'Hello failure'
         }
     }
