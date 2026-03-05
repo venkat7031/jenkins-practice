@@ -20,9 +20,8 @@ pipeline {
             }
         }
     }
-}
 
-post { 
+    post { 
         always { 
             echo 'I will always say Hello again!'
             deleteDir{}
@@ -34,3 +33,6 @@ post {
             echo 'Hello failure'
         }
     }
+}
+
+
